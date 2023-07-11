@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_30dp"
+    android:background="@drawable/bg_dailoglogoout">
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="@dimen/_40dp"
+        android:layout_height="@dimen/_40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/_10dp"
+        android:padding="@dimen/_10dp"
+        android:src="@drawable/ic_close" />
+
+
+    <ImageView
+        android:id="@+id/iv_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_close"
+        android:src="@drawable/ic_logout" />
+
+    <TextView
+        android:id="@+id/tv_logg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_logout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_10dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Logout"
+        android:textColor="@color/textBlack"
+        android:textSize="@dimen/_20sp" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_logg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_6dp"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="center"
+        android:paddingHorizontal="@dimen/_60dp"
+        android:text="Are you sure want to logout your account?"
+        android:textColor="#686175"
+        android:textSize="@dimen/_16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/description"
+        android:layout_marginHorizontal="@dimen/_20dp"
+        android:layout_marginVertical="@dimen/_20dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/tv_cancle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_cancel"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center"
+            android:paddingVertical="@dimen/_15dp"
+            android:text="CANCEL"
+            android:textColor="@color/textBlack" />
+
+
+        <TextView
+            android:id="@+id/tv_yes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_yes"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center"
+            android:paddingVertical="@dimen/_15dp"
+            android:text="YES"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

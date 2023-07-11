@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?selectableItemBackground"
+    android:paddingHorizontal="@dimen/_20dp">
+
+
+    <RelativeLayout
+        android:id="@+id/lMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/_15dp">
+
+        <ImageView
+            android:id="@+id/imgUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/im_chat_food" />
+
+        <LinearLayout
+            android:id="@+id/textlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_10dp"
+            android:layout_toStartOf="@id/minlayout"
+            android:layout_toEndOf="@id/imgUser"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Veranda Restaurant "
+                android:textColor="@color/textBlack"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="Hie !!!    "
+                android:textColor="@color/grey"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/minlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="@dimen/_5dp">
+
+            <TextView
+                android:id="@+id/tv_msgtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/data_min"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/_12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_Ppandingmsg"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/bg_chat_red"
+                android:gravity="center"
+                android:text="5:00"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10sp" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1dp"
+        android:layout_below="@id/lMain"
+        android:background="@color/red_20" />
+
+
+</RelativeLayout>

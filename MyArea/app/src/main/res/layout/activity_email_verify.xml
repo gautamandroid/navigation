@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.EmailVerifyActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_50dp"
+        android:src="@drawable/im_app_name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20dp"
+        android:layout_marginTop="120dp"
+        android:fontFamily="@font/optima_bold"
+        android:text="@string/email_verification"
+        android:textColor="@color/textBlack"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20dp"
+        android:layout_marginTop="@dimen/_4dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/we_will_send_verification_code_on_your_email_id_xyz_gmail_com"
+        android:textColor="@color/grey"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20dp"
+        android:src="@drawable/ic_verify_email" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_20dp"
+        android:layout_marginLeft="@dimen/_20dp"
+        android:layout_marginTop="@dimen/_20dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/please_cllick_on_the_verification_link_to_verify_and_login_again"
+        android:textColor="@color/drygrey"
+        android:textSize="14sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bt_verifyemail"
+        style="@style/Button.Full"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_40dp"
+        android:checkable="true"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text="@string/go_to_verify"
+        android:textSize="@dimen/_18sp" />
+
+
+</LinearLayout>

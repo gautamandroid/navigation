@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_bottom"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.myarea.fragment.homeFragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_radarFragment"
+            app:destination="@id/radarFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_vidioFragment"
+            app:destination="@id/vidioFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_chatFragment"
+            app:destination="@id/chatFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_pluseFragment"
+            app:destination="@id/pluseFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_pluseFragment2"
+            app:destination="@id/pluseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/vidioFragment"
+        android:name="com.example.myarea.fragment.vidioFragment.VidioFragment"
+        android:label="fragment_vidio"
+        tools:layout="@layout/fragment_vidio" />
+    <fragment
+        android:id="@+id/radarFragment"
+        android:name="com.example.myarea.fragment.RadarFragment"
+        android:label="fragment_radar"
+        tools:layout="@layout/fragment_radar" />
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.example.myarea.fragment.messageFragment.ChatFragment"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat" />
+    <fragment
+        android:id="@+id/pluseFragment"
+        android:name="com.example.myarea.fragment.PluseFragment"
+        android:label="fragment_pluse"
+        tools:layout="@layout/fragment_pluse" />
+
+    <fragment
+        android:id="@+id/coinFragment"
+        android:name="com.example.myarea.navigationView.coin.CoinFragment"
+        android:label="fragment_coin"
+        tools:layout="@layout/fragment_coin" >
+        <action
+            android:id="@+id/action_coinFragment_to_coinHistoryFragment"
+            app:destination="@id/coinHistoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutUsFragment"
+        android:name="com.example.myarea.navigationView.AboutUsFragment"
+        android:label="fragment_about_us"
+        tools:layout="@layout/fragment_about_us" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.myarea.navigationView.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_manageProfileFragment"
+            app:destination="@id/manageProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/termAndConditionFragment"
+        android:name="com.example.myarea.navigationView.TermAndConditionFragment"
+        android:label="fragment_term_and_condition"
+        tools:layout="@layout/fragment_term_and_condition" />
+    <fragment
+        android:id="@+id/homeFragment2"
+        android:name="com.example.myarea.fragment.homeFragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home"/>
+    <fragment
+        android:id="@+id/manageProfileFragment"
+        android:name="com.example.myarea.navigationView.profile.ManageProfileFragment"
+        android:label="fragment_manage_profile"
+        tools:layout="@layout/fragment_manage_profile" >
+        <action
+            android:id="@+id/action_manageProfileFragment_to_changePasswordFragment"
+            app:destination="@id/changePasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/changePasswordFragment"
+        android:name="com.example.myarea.navigationView.profile.ChangePasswordFragment"
+        android:label="fragment_change_password"
+        tools:layout="@layout/fragment_change_password" />
+    <fragment
+        android:id="@+id/coinHistoryFragment"
+        android:name="com.example.myarea.navigationView.coin.CoinHistoryFragment"
+        android:label="fragment_coin_history"
+        tools:layout="@layout/fragment_coin_history" />
+</navigation>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ViewPagerActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_page">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/dots_indicator">
+
+            <!--        <RelativeLayout-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            >-->
+
+            <!--            <ImageView-->
+            <!--                android:id="@+id/im_ratingtop"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_alignParentRight="true"-->
+            <!--                android:layout_marginTop="5dp"-->
+            <!--                android:layout_marginRight="20dp"-->
+            <!--                android:src="@drawable/ratingup_line" />-->
+
+
+            <!--            <ImageView-->
+            <!--                android:id="@+id/animationline"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_below="@id/im_ratingtop"-->
+            <!--                android:layout_marginBottom="30dp"-->
+            <!--                android:src="@drawable/line" />-->
+
+
+            <!--            <ImageView-->
+            <!--                android:id="@+id/im_rating"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_below="@id/animationline"-->
+            <!--                android:layout_marginTop="-40dp"-->
+            <!--                android:src="@drawable/imagerating" />-->
+
+            <!--        </RelativeLayout>-->
+
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true" />
+
+        </RelativeLayout>
+
+
+        <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+            android:id="@+id/dots_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tv_description"
+            android:layout_centerHorizontal="true"
+            app:dotsColor="@color/textcolor"
+            app:dotsCornerRadius="@dimen/_8dp"
+            app:dotsSize="@dimen/_8dp"
+            app:dotsSpacing="@dimen/_4dp"
+            app:dotsWidthFactor="2.5"
+            app:progressMode="true"
+            app:selectedDotColor="@color/dotorcolor" />
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/loginlayout"
+            android:layout_margin="5dp"
+            android:layout_marginBottom="@dimen/_50dp"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="center"
+            android:text="@string/nulla_lorem_mollit_cupidatat_irure_laborum_magna_nulla"
+            android:textColor="@color/textBlack"
+            android:textSize="@dimen/_28sp" />
+
+
+        <LinearLayout
+            android:id="@+id/loginlayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_55dp"
+            android:layout_above="@id/bottom"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginVertical="30dp"
+            android:background="@drawable/bg_clickbotton"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/login"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_3dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_login"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="@string/login"
+                android:textColor="@color/textBlack"
+                android:textSize="@dimen/_17sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/next"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_25dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_next" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="@dimen/_40dp"
+            android:layout_marginBottom="@dimen/_20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_haveanaccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/have_an_account"
+                android:textColor="@color/textcolor" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="end"
+                android:text="@string/create"
+                android:textColor="@color/textBlack" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

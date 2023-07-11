@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_page"
+    android:orientation="vertical"
+    tools:context=".fragment.messageFragment.ChatFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20dp"
+        android:layout_marginTop="@dimen/_60dp"
+        android:fontFamily="@font/optima_bold"
+        android:text="Message"
+        android:textColor="@color/textBlack"
+        android:textSize="@dimen/_30sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_15dp"
+        android:layout_marginLeft="@dimen/_20dp"
+        android:background="@drawable/bg_chat_adepter"
+        android:drawableStart="@drawable/ic_search"
+        android:drawablePadding="@dimen/_5dp"
+        android:fontFamily="@font/poppins_regular"
+        android:hint="Type something"
+        android:layout_marginRight="@dimen/_20dp"
+        android:elevation="@dimen/_8dp"
+        android:paddingHorizontal="@dimen/_10dp"
+        android:paddingVertical="@dimen/_10dp"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/_15sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/re_message"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="match_parent"
+        />
+
+
+</LinearLayout>

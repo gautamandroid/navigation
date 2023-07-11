@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".navigationView.profile.ManageProfileFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_half" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/tv_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_50dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/_40dp"
+                    android:layout_height="@dimen/_40dp"
+                    android:padding="@dimen/_10dp"
+                    android:src="@drawable/ic_back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/optima_bold"
+                    android:text=" Manage Profile"
+                    android:textColor="@color/textBlack"
+                    android:textSize="@dimen/_25sp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/im_camera" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_20dp"
+                android:layout_marginTop="@dimen/_10dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/full_name"
+                android:textColor="@color/textBlack"
+                android:textSize="@dimen/_16sp" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="@dimen/_5dp"
+                android:background="@drawable/bg_textview"
+                android:elevation="@dimen/_10dp"
+                android:paddingHorizontal="@dimen/_5dp"
+                android:paddingVertical="@dimen/_13dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_20dp"
+                android:layout_marginTop="@dimen/_20dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/email"
+                android:textColor="@color/textBlack"
+                android:textSize="@dimen/_16sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_20dp"
+                android:layout_marginTop="@dimen/_5dp"
+                android:background="@drawable/bg_textview"
+                android:elevation="@dimen/_10dp"
+                android:inputType="textPassword"
+                android:paddingHorizontal="@dimen/_5dp"
+                android:paddingVertical="@dimen/_13dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="@dimen/_20dp">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/dotorcolor"
+                        android:checked="false"
+                        android:padding="@dimen/_4dp"
+                        android:text="Male"
+                        android:textColor="@color/textcolor" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/dotorcolor"
+                        android:checked="false"
+                        android:padding="@dimen/_4dp"
+                        android:text="Female"
+                        android:textColor="@color/textcolor" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/dotorcolor"
+                        android:checked="false"
+                        android:padding="@dimen/_4dp"
+                        android:text="Rather Not Say"
+                        android:textColor="@color/textcolor" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_20dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/_address"
+                android:textColor="@color/textBlack"
+                android:textSize="@dimen/_16sp" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/et_zender"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_20dp"
+                android:background="@drawable/bg_textview"
+                android:elevation="@dimen/_10dp">
+
+                <AutoCompleteTextView
+                    android:id="@+id/drop_downfiled"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="@dimen/_20sp"
+                    android:background="@android:color/transparent"
+                    android:drawablePadding="@dimen/_5dp"
+                    android:inputType="none" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/bt_changepassword"
+                style="@style/Button.update"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_40dp"
+                android:layout_marginTop="@dimen/_70dp"
+                android:checkable="true"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:selectAllOnFocus="true"
+                android:text="Change Password"
+                android:textSize="@dimen/_18sp" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/bt_update"
+                style="@style/Button.chanepas"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_40dp"
+                android:layout_marginTop="@dimen/_10dp"
+                android:layout_marginBottom="@dimen/_20dp"
+                android:checkable="true"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:text="@string/update"
+                android:textSize="@dimen/_18sp" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

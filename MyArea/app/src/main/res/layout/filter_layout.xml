@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/_20dp"
+    android:background="@drawable/bg_button_filter">
+
+    <RelativeLayout
+        android:id="@+id/layoutfilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center"
+            android:text="Filter"
+            android:textColor="@color/textBlack"
+            android:textSize="@dimen/_16sp" />
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="@dimen/_35dp"
+            android:layout_height="@dimen/_35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/_10dp"
+            android:padding="@dimen/_10dp"
+            android:src="@drawable/ic_close" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_select_option"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutfilter"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Select Option"
+        android:textColor="@color/textBlack"
+        android:textSize="@dimen/_18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_select_option"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="@color/dotorcolor"
+                android:checked="false"
+                android:padding="@dimen/_4dp"
+                android:text="Restaurant"
+                android:textColor="@color/textcolor" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="@color/dotorcolor"
+                android:checked="false"
+                android:padding="@dimen/_4dp"
+                android:text="Hotels"
+                android:textColor="@color/textcolor" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="@color/dotorcolor"
+                android:checked="false"
+                android:padding="@dimen/_4dp"
+                android:text="Park"
+                android:textColor="@color/textcolor" />
+
+            <RadioButton
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="@color/dotorcolor"
+                android:checked="false"
+                android:padding="@dimen/_4dp"
+                android:text="Others"
+                android:textColor="@color/textcolor" />
+
+        </RadioGroup>
+
+        <View
+            android:id="@+id/iv_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1dp"
+            android:layout_below="@+id/im_profile"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_8dp"
+            android:background="@color/red_20" />
+
+
+        <TextView
+            android:id="@+id/sort_by"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layoutfilter"
+            android:layout_marginTop="@dimen/_10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Sort by "
+            android:textColor="@color/textBlack"
+            android:textSize="@dimen/_18sp" />
+
+        <RadioGroup
+            android:id="@+id/shortradio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="@color/dotorcolor"
+                android:checked="false"
+                android:padding="@dimen/_4dp"
+                android:text="Rating"
+                android:textColor="@color/textcolor" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="@color/dotorcolor"
+                android:checked="false"
+                android:padding="@dimen/_4dp"
+                android:text="@string/distance"
+                android:textColor="@color/textcolor" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/bt_reset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_10dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/grey"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingVertical="@dimen/_10dp"
+            android:text="@string/reset"
+            android:textColor="@color/black"
+            app:cornerRadius="@dimen/_20dp" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/bt_done"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/black"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingVertical="@dimen/_10dp"
+            android:text="@string/done"
+            android:textColor="@color/white"
+            app:cornerRadius="@dimen/_20dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

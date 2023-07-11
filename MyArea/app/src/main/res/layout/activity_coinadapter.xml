@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_20dp"
+    android:background="@drawable/ic_cominnnn">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_10dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="50"
+            android:textColor="@color/textBlack"
+            android:textSize="@dimen/_18sp" />
+
+        <ImageView
+            android:id="@+id/im_coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_10dp"
+            android:src="@drawable/ic_coin" />
+
+        <TextView
+            android:id="@+id/tv_price_coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_20dp"
+            android:background="@drawable/bg_dollar"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingHorizontal="@dimen/_22dp"
+            android:paddingVertical="@dimen/_5dp"
+            android:text="@string/coin_price"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

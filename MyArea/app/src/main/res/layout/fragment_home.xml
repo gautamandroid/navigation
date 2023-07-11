@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.homeFragment.HomeFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_half" />
+
+    <RelativeLayout
+        android:id="@+id/rt_frelative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/_20dp"
+        android:paddingVertical="@dimen/_20dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_profiles"
+            android:layout_width="@dimen/_60dp"
+            android:layout_height="@dimen/_60dp"
+            android:src="@drawable/img_home" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_10dp"
+            android:layout_toEndOf="@id/img_profiles"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/titles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/optima_bold"
+                android:text="Hello !!"
+                android:textColor="@color/textBlack"
+                android:textSize="@dimen/_20sp" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Wade Warren "
+                android:textColor="@color/textBlack"
+                android:textSize="@dimen/_18sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/im_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/img_notification" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rc_searchvie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rt_frelative"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+
+        <EditText
+            android:id="@+id/et_searchview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:layout_marginRight="@dimen/_20dp"
+            android:layout_toStartOf="@id/img_filter"
+            android:background="@drawable/bg_chat_adepter"
+            android:drawableStart="@drawable/ic_search"
+            android:drawablePadding="@dimen/_5dp"
+            android:elevation="@dimen/_8dp"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="Type something"
+            android:paddingHorizontal="@dimen/_10dp"
+            android:paddingVertical="@dimen/_10dp"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/_15sp" />
+
+        <ImageView
+            android:id="@+id/img_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/_20dp"
+            android:src="@drawable/img_filter" />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/re_homee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rc_searchvie" />
+
+
+</RelativeLayout>

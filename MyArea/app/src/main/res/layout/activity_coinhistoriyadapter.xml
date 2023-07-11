@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/rc_mainlayout"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/_20dp"
+
+    >
+
+        <ImageView
+            android:id="@+id/ig_profile"
+            android:layout_width="@dimen/_50dp"
+            android:layout_height="@dimen/_50dp"
+            android:layout_margin="@dimen/_10dp"
+            android:src="@drawable/img_profile" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_toStartOf="@id/tv_totalcoin"
+            android:layout_toEndOf="@id/ig_profile"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_profilename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_gravity="center_vertical"
+                android:maxLines="1"
+                android:text="@string/coin_gifted_to_mr_abc"
+                android:textColor="@color/textBlack"
+                android:textSize="@dimen/_16sp" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_4dp"
+                    android:drawableStart="@drawable/ic_calender"
+                    android:drawablePadding="@dimen/_4dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="23 March, 2023"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/_12sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_min_ago"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_4dp"
+                    android:drawableStart="@drawable/ic_time"
+                    android:drawablePadding="@dimen/_4dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:paddingStart="@dimen/_4dp"
+                    android:text="@string/_10_min_ago"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/_12sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_totalcoin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textSize="@dimen/_18sp"
+            android:layout_centerVertical="true"
+            android:layout_marginHorizontal="@dimen/_5dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/historiy_coin" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1dp"
+        android:layout_below="@id/ig_profile"
+        android:background="@color/red_20" />
+
+</RelativeLayout>

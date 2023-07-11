@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">MyArea</string>
+    <string name="create"><u>Create</u></string>
+    <string name="not_a_member">Not a member? <u><font fgcolor="#231F20">Sign Up</font></u></string>
+    <string name="more"> <u><font fgcolor="#FF0000">More</font></u> </string>
+    <string name="coin_historiy"><u><font fgcolor="#FF0000">Coin History </font></u></string>
+    <string name="Create_your_Account">Don\'t have an account? <u><font fgcolor="#FF3700B3">Signup</font></u></string>
+    <string name="term_condition"><![CDATA[Term & Condition ....]]></string>
+    <string name="navopen">open</string>
+    <string name="navclose">cloe</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome_back">Welcome Back!!</string>
+    <string name="please_login_to_continue">Please login to continue</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="remember_me">Remember me</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="please_login_continu">Please login to continue</string>
+    <string name="full_name">Full Name</string>
+    <string name="gender">Gender</string>
+    <string name="address">Address</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="email_verification">Email Verification</string>
+    <string name="we_will_send_verification_code_on_your_email_id_xyz_gmail_com">We will send verification code on your email id : xyz@gmail.com</string>
+    <string name="please_cllick_on_the_verification_link_to_verify_and_login_again">Please cllick on the verification link to verify and login again</string>
+    <string name="go_to_verify">Go to Verify</string>
+    <string name="nulla_lorem_mollit_cupidatat_irure_laborum_magna_nulla">Nulla Lorem mollit cupidatat irure. Laborum magna nulla.</string>
+    <string name="have_an_account">Have an account?</string>
+    <string name="data_min">%d PM</string>
+    <string name="coin_price"> $ %d </string>
+    <string name="historiy_coin"> $%s </string>
+    <string name="_4_5">%d(5)</string>
+    <string name="terms_condition"><![CDATA[Terms & Condition]]></string>
+    <string name="type_message">Type message</string>
+    <string name="veranda_restaurant">Veranda Restaurant</string>
+    <string name="_address">Address</string>
+    <string name="app_namee">SpinnerInKotli</string>
+    <string name="selected_item">Selected item:</string>
+    <string name="change_password">Change Password</string>
+    <string name="update">Update</string>
+    <string name="coin_store">Coin Store</string>
+    <string name="confirm">Confirm</string>
+    <string name="coin_history">Coin History</string>
+    <string name="_10_min_ago">10 min ago</string>
+    <string name="coin_gifted_to_mr_abc">Coin Gifted to Mr. ABC</string>
+    <string name="more_read">I am very with the service, I think this is a best restaurant....I am very with the service, I think this is a best restaurant....fyftydxrtyertdttdtdrtdftcfggfserfgrtI am very with the service, I think this is a best restaurant....fyftydxrtyertdttdtdrtdftcfggfserfgrtI am very with the service, I think this is a best restaurant....fyftydxrtyertdttdtdrtdftcfggfserfgrt</string>
+    <string name="done">Done</string>
+    <string name="reset">Reset</string>
+    <string name="distance">Distance</string>
+
+
+    <string-array name="Languages">
+        <item>Java</item>
+        <item>Kotlin</item>
+        <item>Swift</item>
+        <item>Python</item>
+        <item>Scala</item>
+        <item>Perl</item>
+    </string-array>
+
+</resources>

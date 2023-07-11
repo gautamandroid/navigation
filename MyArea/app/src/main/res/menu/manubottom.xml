@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_selector_home"
+        android:title="Home" />
+    <item
+        android:id="@+id/vidioFragment"
+        android:icon="@drawable/ic_selector_vidio"
+        android:title="vidio" />
+
+    <item
+        android:id="@+id/pluseFragment"
+        android:title="" />
+    <item
+        android:id="@+id/radarFragment"
+        android:icon="@drawable/ic_selector_radar"
+        android:title="radar" />
+
+    <item
+        android:id="@+id/chatFragment"
+        android:icon="@drawable/ic_selector_chat_"
+        android:title="chat" />
+</menu>

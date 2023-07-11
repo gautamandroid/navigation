@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".navigationView.profile.ProfileFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_profilebackgrund" />
+
+
+        <LinearLayout
+            android:id="@+id/tv_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_50dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_40dp"
+                android:layout_height="@dimen/_40dp"
+                android:padding="@dimen/_10dp"
+                android:src="@drawable/ic_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/optima_bold"
+                android:text=" Profile"
+                android:textColor="@color/textBlack"
+                android:textSize="@dimen/_25sp" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rc_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_profile"
+            android:layout_marginStart="@dimen/_20dp"
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_marginEnd="@dimen/_20dp"
+            android:layout_marginBottom="@dimen/_20dp">
+
+
+            <ImageView
+                android:id="@+id/im_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/img_profile" />
+
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/im_profile"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_4dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Robert Smith"
+                android:textColor="@color/textBlack"
+                android:textSize="@dimen/_16sp" />
+
+            <LinearLayout
+                android:id="@+id/email_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_name"
+                android:layout_marginHorizontal="@dimen/_10dp"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_width="@dimen/_48dp"
+                    android:layout_height="@dimen/_48dp"
+                    android:padding="@dimen/_12dp"
+                    android:src="@drawable/ic_email" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/poppins_regular"
+                    android:maxLines="1"
+                    android:text="Robertsmith18@gmail.com"
+                    android:textColor="@color/drygrey"
+                    android:textSize="@dimen/_14sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/locations"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/email_layout"
+                android:layout_marginHorizontal="@dimen/_10dp"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_width="@dimen/_48dp"
+                    android:layout_height="@dimen/_48dp"
+                    android:padding="@dimen/_12dp"
+                    android:src="@drawable/ic_location" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="@dimen/_4dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/poppins_regular"
+                    android:maxLines="2"
+                    android:text="4517 Washington Ave. Manchester, Kentucky 39495"
+                    android:textColor="@color/drygrey"
+                    android:textSize="@dimen/_14sp" />
+
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/bt_editprofile"
+                style="@style/Button.Full"
+                android:layout_below="@id/locations"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_80dp"
+                android:layout_marginVertical="@dimen/_15dp"
+                android:checkable="true"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="Edit Profile"
+                android:textSize="@dimen/_16sp" />
+
+        </RelativeLayout>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tb_tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rc_layout"
+            android:layout_marginHorizontal="@dimen/_20dp"
+            android:layout_marginBottom="@dimen/_10dp"
+            android:background="@color/white"
+            android:elevation="@dimen/_10dp"
+            app:tabGravity="fill"
+            app:tabIconTint="@color/selector_tab_color"
+            app:tabIndicator="@drawable/bg_tablayout"
+            app:tabIndicatorHeight="@dimen/_2dp"
+            app:tabInlineLabel="true"
+            app:tabRippleColor="@null"
+            app:tabSelectedTextColor="@color/black"
+            app:tabTextAppearance="@style/TextAppearance.AppCompat.Small"
+            app:tabTextColor="@color/grey" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/vi_viewpager_profile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tb_tablayout"
+            android:background="@color/white" />
+
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>
